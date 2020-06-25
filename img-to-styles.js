@@ -94,7 +94,8 @@ function choose_weight() {
 
 function image_stylization(contentimg, styleimg, callback, weight) {
   // check for .jpg
-  if (contentimg.slice(-4) == ".jpg" && styleimg.slice(-4) == ".jpg") {
+  // if (contentimg.slice(-4) == ".jpg" && styleimg.slice(-4) == ".jpg") {
+  if (true) {
     console.log(" styling ", contentimg, " with ", styleimg);
     // let weight = "[0.0,0.2,0.4,0.6,0.8,1.0]";
     let stylesize = sizeOf("./images/" + style_folder + "/" + styleimg);
